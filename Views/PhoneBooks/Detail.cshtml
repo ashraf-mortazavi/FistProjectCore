@@ -1,0 +1,30 @@
+@model PhoneBook.Models.PhoneBooks
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container p-3 my-3 border">
+    <h1>Friend Details</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+      
+     
+    </dl>
+    <div>
+        <a class="btn btn-danger" asp-action="Index">Back</a>
+    </div>
+</div>

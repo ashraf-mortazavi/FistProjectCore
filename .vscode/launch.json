@@ -11,7 +11,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
+<<<<<<< HEAD
             "program": "${workspaceFolder}/bin/Debug/net7.0/FistProjectCore.dll",
+=======
+            "program": "${workspaceFolder}/bin/Debug/net7.0/PhoneBook.dll",
+>>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

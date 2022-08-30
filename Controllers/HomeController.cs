@@ -1,8 +1,14 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using FistProjectCore.Models;
 
 namespace FistProjectCore.Controllers;
+=======
+using PhoneBook.Models;
+
+namespace PhoneBook.Controllers;
+>>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
 
 public class HomeController : Controller
 {
@@ -17,9 +23,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+<<<<<<< HEAD
         if (configuration["IsWebsiteAccesible"].Equals("true"))
         return View();
         return Ok("this website is closed");
+=======
+       
+        return View();
+   
+>>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
     }
 
     public IActionResult Privacy()
