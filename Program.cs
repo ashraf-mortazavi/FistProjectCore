@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-=======
 using static PhoneBook.Models.PhoneBooks;
 
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-<<<<<<< HEAD
-=======
+
 builder.Services.AddScoped<IPhonBook, PhoneBookItems>();
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
 
 var app = builder.Build();
 
