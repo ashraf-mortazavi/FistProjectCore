@@ -7,11 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-<<<<<<< HEAD
-                "${workspaceFolder}/FistProjectCore.csproj",
-=======
                 "${workspaceFolder}/PhoneBook.csproj",
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -23,11 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-<<<<<<< HEAD
-                "${workspaceFolder}/FistProjectCore.csproj",
-=======
                 "${workspaceFolder}/PhoneBook.csproj",
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -41,11 +33,8 @@
                 "watch",
                 "run",
                 "--project",
-<<<<<<< HEAD
-                "${workspaceFolder}/FistProjectCore.csproj"
-=======
                 "${workspaceFolder}/PhoneBook.csproj"
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
+
             ],
             "problemMatcher": "$msCompile"
         }
