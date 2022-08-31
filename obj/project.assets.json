@@ -235,8 +235,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -246,7 +244,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1017,8 +1014,6 @@
         "version.txt"
       ]
     },
-<<<<<<< HEAD
-=======
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -1046,7 +1041,6 @@
         "packageIcon.png"
       ]
     },
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -2903,12 +2897,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0"
-=======
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0",
       "Newtonsoft.Json >= 13.0.1"
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
     ]
   },
   "packageFolders": {
@@ -2917,19 +2907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Ashra\\OneDrive\\Documents\\FistProjectCore\\FistProjectCore.csproj",
-      "projectName": "FistProjectCore",
-      "projectPath": "C:\\Users\\Ashra\\OneDrive\\Documents\\FistProjectCore\\FistProjectCore.csproj",
-      "packagesPath": "C:\\Users\\Ashra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ashra\\OneDrive\\Documents\\FistProjectCore\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\Ashra\\OneDrive\\Documents\\PhoneBook\\PhoneBook.csproj",
       "projectName": "PhoneBook",
       "projectPath": "C:\\Users\\Ashra\\OneDrive\\Documents\\PhoneBook\\PhoneBook.csproj",
       "packagesPath": "C:\\Users\\Ashra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ashra\\OneDrive\\Documents\\PhoneBook\\obj\\",
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ashra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2959,13 +2941,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.2.0, )"
-<<<<<<< HEAD
-=======
           },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
->>>>>>> 3a19483 (NewChange In PhoneBook Project .net core)
           }
         },
         "imports": [
@@ -2989,5 +2968,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.3.22179.4\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Ashra\\OneDrive\\Documents\\PhoneBook\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
