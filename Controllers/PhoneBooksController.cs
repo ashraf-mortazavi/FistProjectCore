@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using static PhoneBook.Models.PhoneBooks;
 using Newtonsoft.Json;
-
+using System.Text.Json;
 
 namespace PhoneBook.Controllers;
 
@@ -150,5 +150,16 @@ public class PhoneBooksController : Controller
 
     }
 
+     [Route("friends-json")]
+     public JsonResult DisplayJson ()
+     {
+    var options = new JsonSerializerOptions() 
+    { 
+        WriteIndented = true
+    };
+        list = iphonebook.GetAllPhoneBooksItems();
+       string x = System.Text.Json.JsonSerializer.Serialize<IList<PhoneBooks>>(list, options);
+        return Json(x);
+     }
 }
 
