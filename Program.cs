@@ -1,4 +1,5 @@
 using static PhoneBook.Models.PhoneBooks;
+using PhonBook.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,8 +25,13 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+    
+
 app.Run();
+
+app.UseMiddleware<Mymiddelware>();
