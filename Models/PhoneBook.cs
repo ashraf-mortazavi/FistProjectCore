@@ -1,6 +1,7 @@
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using PhonBook.Model;
 
 namespace PhoneBook.Models;
 
@@ -19,6 +20,8 @@ public class PhoneBooks
 
     
     public int? Id { get; set; }
+
+    public ICollection<PhoneBookImages> PhoneBookImages {get; set;}
 
     public interface IPhonBook
     {
