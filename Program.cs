@@ -1,12 +1,17 @@
 using static PhoneBook.Models.PhoneBooks;
 using PhonBook.Middleware;
+using Microsoft.EntityFrameworkCore;
+using PhonBook.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IPhonBook, PhoneBookItems>();
+builder.Services.AddScoped<IPhoneBookServices, PhoneBookServices>();
+
+builder.Services.AddEntityFrameworkSqlServer().AddDbContext<PhonBook.Context.PhonebookDbContext>(config =>
+{config.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));});
 
 var app = builder.Build();
 
